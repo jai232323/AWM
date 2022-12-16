@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Agriculture_Fruits/app/src/main/res/layout/activity_about.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Agriculture_Fruits/app/src/main/res/layout/activity_apple_description.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Agriculture_Fruits/app/src/main/res/layout/activity_banana_description.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Agriculture_Fruits/app/src/main/res/layout/activity_carrot_description.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Agriculture_Fruits/app/src/main/res/layout/activity_cereles_description.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Agriculture_Fruits/app/src/main/res/layout/activity_contact.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Agriculture_Fruits/app/src/main/res/layout/activity_fruites.xml" value="0.264" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Agriculture_Fruits/app/src/main/res/layout/activity_list.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Agriculture_Fruits/app/src/main/res/layout/activity_login.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Agriculture_Fruits/app/src/main/res/layout/activity_main.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Agriculture_Fruits/app/src/main/res/layout/activity_meat_description.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Agriculture_Fruits/app/src/main/res/layout/activity_onion_description.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Agriculture_Fruits/app/src/main/res/layout/activity_pulse_description.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Agriculture_Fruits/app/src/main/res/layout/activity_register.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Agriculture_Fruits/app/src/main/res/layout/activity_wheat_description.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Agriculture_Fruits/app/src/main/res/layout/splashscreen.xml" value="0.2" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

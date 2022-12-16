@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.agriculture_fruits">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/fruits"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/fruits"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Agriculture_Fruits">
+        <activity
+            android:name=".DescriptionActivity.WheatDescriptionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DescriptionActivity.PulseDescriptionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DescriptionActivity.OnionDescriptionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DescriptionActivity.MeatDescriptionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DescriptionActivity.CerelesDescriptionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DescriptionActivity.CarrotDescriptionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DescriptionActivity.BananaDescriptionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DescriptionActivity.AppleDescriptionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityList.AboutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityList.ContactActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityList.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityList.RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ListActivityy"
+            android:exported="false" />
+        <activity android:name=".FruitesActivity" />
+        <activity
+            android:name=".SplashScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

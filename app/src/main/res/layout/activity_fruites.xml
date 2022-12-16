@@ -1,0 +1,794 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FruitesActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bar"
+            android:background="?android:attr/windowBackground">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+                <TextView
+                    android:layout_weight="1.5"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="@string/app_name"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/regular"
+                    android:gravity="center"
+                    android:textColor="@color/red"/>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="38dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="38dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/user"
+                    android:id="@+id/ContactProfile"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="4">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="155dp"
+                    android:id="@+id/admissionForm"
+                    app:cardElevation="5dp"
+                    android:layout_margin="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:layout_width="100dp"
+                                android:layout_height="120dp"
+                                android:src="@drawable/apple"
+                                android:layout_weight="0.5"
+                                android:layout_gravity="center"/>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_weight="1.5">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Apple"
+                                    android:textColor="@color/apple"
+                                    android:textSize="30dp"
+                                    android:fontFamily="@font/montserrat"/>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Price : 80/kg"
+                                    android:textSize="20dp"
+                                    android:fontFamily="@font/luxurious"
+                                    android:textColor="@color/apple"
+                                    android:textStyle="bold"/>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:weightSum="2"
+                                    android:orientation="horizontal">
+
+
+                                    <com.google.android.material.button.MaterialButton
+                                        android:id="@+id/AppleDescription"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Description"
+                                        android:layout_weight="1"
+                                        android:textSize="12dp"
+                                        android:layout_marginLeft="5dp"
+                                        style="@style/Widget.Material3.Button.OutlinedButton"/>
+                                    <com.google.android.material.button.MaterialButton
+                                        android:id="@+id/AppleLiveData"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Live Data"
+                                        android:textSize="14dp"
+                                        android:layout_marginLeft="5dp"
+
+                                        android:layout_weight="1"
+                                        style="@style/Widget.Material3.Button.OutlinedButton"/>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="155dp"
+                    app:cardElevation="5dp"
+                    android:layout_margin="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:layout_width="100dp"
+                                android:layout_height="120dp"
+                                android:src="@drawable/bananas"
+                                android:layout_weight="0.5"
+                                android:layout_gravity="center"/>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_weight="1.5">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Banana"
+                                    android:textColor="@color/banana"
+                                    android:textSize="30dp"
+                                    android:fontFamily="@font/montserrat"/>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Price : 30/kg"
+                                    android:textSize="20dp"
+                                    android:fontFamily="@font/luxurious"
+                                    android:textColor="@color/banana"
+                                    android:textStyle="bold"/>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:weightSum="2"
+                                    android:orientation="horizontal">
+
+
+                                    <com.google.android.material.button.MaterialButton
+                                        android:id="@+id/BananaDescription"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Description"
+                                        android:layout_weight="1"
+                                        android:textSize="12dp"
+                                        android:layout_marginLeft="5dp"
+                                        style="@style/Widget.Material3.Button.OutlinedButton"/>
+                                    <com.google.android.material.button.MaterialButton
+                                        android:id="@+id/BananaLiveData"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Live Data"
+                                        android:textSize="14dp"
+                                        android:layout_marginLeft="5dp"
+
+                                        android:layout_weight="1"
+                                        style="@style/Widget.Material3.Button.OutlinedButton"/>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="155dp"
+                    app:cardElevation="5dp"
+                    android:layout_margin="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:layout_width="100dp"
+                                android:layout_height="120dp"
+                                android:src="@drawable/carrots"
+                                android:layout_weight="0.5"
+                                android:layout_gravity="center"/>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_weight="1.5">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Carrot"
+                                    android:textColor="@color/carrot"
+                                    android:textSize="30dp"
+                                    android:fontFamily="@font/montserrat"/>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Price : 20/kg"
+                                    android:textSize="20dp"
+                                    android:fontFamily="@font/luxurious"
+                                    android:textColor="@color/carrot"
+                                    android:textStyle="bold"/>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:weightSum="2"
+                                    android:orientation="horizontal">
+
+
+                                    <com.google.android.material.button.MaterialButton
+                                        android:id="@+id/CarrotDescription"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Description"
+                                        android:layout_weight="1"
+                                        android:textSize="12dp"
+                                        android:layout_marginLeft="5dp"
+                                        style="@style/Widget.Material3.Button.OutlinedButton"/>
+                                    <com.google.android.material.button.MaterialButton
+                                        android:id="@+id/CarrotLiveData"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Live Data"
+                                        android:textSize="14dp"
+                                        android:layout_marginLeft="5dp"
+
+                                        android:layout_weight="1"
+                                        style="@style/Widget.Material3.Button.OutlinedButton"/>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="155dp"
+                    app:cardElevation="5dp"
+                    android:layout_margin="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:layout_width="100dp"
+                                android:layout_height="120dp"
+                                android:src="@drawable/cereals"
+                                android:layout_weight="0.5"
+                                android:layout_gravity="center"/>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_weight="1.5">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Cereles"
+                                    android:textColor="@color/cereles"
+                                    android:textSize="30dp"
+                                    android:fontFamily="@font/montserrat"/>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Price : 100/kg"
+                                    android:textSize="20dp"
+                                    android:fontFamily="@font/luxurious"
+                                    android:textColor="@color/cereles"
+                                    android:textStyle="bold"/>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:weightSum="2"
+                                    android:orientation="horizontal">
+
+
+                                    <com.google.android.material.button.MaterialButton
+                                        android:id="@+id/CerelesDescription"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Description"
+                                        android:layout_weight="1"
+                                        android:textSize="12dp"
+                                        android:layout_marginLeft="5dp"
+                                        style="@style/Widget.Material3.Button.OutlinedButton"/>
+                                    <com.google.android.material.button.MaterialButton
+                                        android:id="@+id/CerelesLiveData"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Live Data"
+                                        android:textSize="14dp"
+                                        android:layout_marginLeft="5dp"
+
+                                        android:layout_weight="1"
+                                        style="@style/Widget.Material3.Button.OutlinedButton"/>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="155dp"
+                    app:cardElevation="5dp"
+                    android:layout_margin="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:layout_width="100dp"
+                                android:layout_height="120dp"
+                                android:src="@drawable/meat"
+                                android:layout_weight="0.5"
+                                android:layout_gravity="center"/>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_weight="1.5">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Meat"
+                                    android:textColor="@color/meat"
+                                    android:textSize="30dp"
+                                    android:fontFamily="@font/montserrat"/>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Price : 120/kg"
+                                    android:textSize="20dp"
+                                    android:fontFamily="@font/luxurious"
+                                    android:textColor="@color/meat"
+                                    android:textStyle="bold"/>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:weightSum="2"
+                                    android:orientation="horizontal">
+
+
+                                    <com.google.android.material.button.MaterialButton
+                                        android:id="@+id/MeatDescription"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Description"
+                                        android:layout_weight="1"
+                                        android:textSize="12dp"
+                                        android:layout_marginLeft="5dp"
+                                        style="@style/Widget.Material3.Button.OutlinedButton"/>
+                                    <com.google.android.material.button.MaterialButton
+                                        android:id="@+id/MeatsLiveData"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Live Data"
+                                        android:textSize="14dp"
+                                        android:layout_marginLeft="5dp"
+
+                                        android:layout_weight="1"
+                                        style="@style/Widget.Material3.Button.OutlinedButton"/>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="155dp"
+                    app:cardElevation="5dp"
+                    android:layout_margin="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+
+                        android:padding="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:layout_width="100dp"
+                                android:layout_height="120dp"
+                                android:src="@drawable/onion"
+                                android:layout_weight="0.5"
+                                android:layout_gravity="center"/>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_weight="1.5">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Onion"
+                                    android:textColor="@color/onion"
+                                    android:textSize="30dp"
+                                    android:fontFamily="@font/montserrat"/>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Price : 50/kg"
+                                    android:textSize="20dp"
+                                    android:fontFamily="@font/luxurious"
+                                    android:textColor="@color/onion"
+                                    android:textStyle="bold"/>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:weightSum="2"
+                                    android:orientation="horizontal">
+
+
+                                    <com.google.android.material.button.MaterialButton
+                                        android:id="@+id/OnionDescription"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Description"
+                                        android:layout_weight="1"
+                                        android:textSize="12dp"
+                                        android:layout_marginLeft="5dp"
+                                        style="@style/Widget.Material3.Button.OutlinedButton"/>
+                                    <com.google.android.material.button.MaterialButton
+                                        android:id="@+id/OnionLiveData"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Live Data"
+                                        android:textSize="14dp"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_weight="1"
+                                        style="@style/Widget.Material3.Button.OutlinedButton"/>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="155dp"
+                    app:cardElevation="5dp"
+                    android:layout_margin="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+
+                        android:padding="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:layout_width="100dp"
+                                android:layout_height="120dp"
+                                android:src="@drawable/pulse2"
+                                android:layout_weight="0.5"
+                                android:layout_gravity="center"/>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_weight="1.5">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Pulse"
+                                    android:textColor="@color/pules"
+                                    android:textSize="30dp"
+                                    android:fontFamily="@font/montserrat"/>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Price : 90/kg"
+                                    android:textSize="20dp"
+                                    android:fontFamily="@font/luxurious"
+                                    android:textColor="@color/pules"
+                                    android:textStyle="bold"/>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:weightSum="2"
+                                    android:orientation="horizontal">
+
+
+                                    <com.google.android.material.button.MaterialButton
+                                        android:id="@+id/PulseDescription"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Description"
+                                        android:layout_weight="1"
+                                        android:textSize="12dp"
+                                        android:layout_marginLeft="5dp"
+                                        style="@style/Widget.Material3.Button.OutlinedButton"/>
+                                    <com.google.android.material.button.MaterialButton
+                                        android:id="@+id/PulseLiveData"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Live Data"
+                                        android:textSize="14dp"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_weight="1"
+                                        style="@style/Widget.Material3.Button.OutlinedButton"/>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="155dp"
+                    app:cardElevation="5dp"
+                    android:layout_margin="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+
+                        android:padding="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:layout_width="100dp"
+                                android:layout_height="120dp"
+                                android:src="@drawable/wheat"
+                                android:layout_weight="0.5"
+                                android:layout_gravity="center"/>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_weight="1.5">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Wheat"
+                                    android:textColor="@color/wheat"
+                                    android:textSize="30dp"
+                                    android:fontFamily="@font/montserrat"/>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Price : 60/kg"
+                                    android:textSize="20dp"
+                                    android:fontFamily="@font/luxurious"
+                                    android:textColor="@color/wheat"
+                                    android:textStyle="bold"/>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:weightSum="2"
+                                    android:orientation="horizontal">
+
+
+                                    <com.google.android.material.button.MaterialButton
+                                        android:id="@+id/WheatDescription"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Description"
+                                        android:layout_weight="1"
+                                        android:textSize="12dp"
+                                        android:layout_marginLeft="5dp"
+                                        style="@style/Widget.Material3.Button.OutlinedButton"/>
+                                    <com.google.android.material.button.MaterialButton
+                                        android:id="@+id/WheatLiveData"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Live Data"
+                                        android:textSize="14dp"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_weight="1"
+                                        style="@style/Widget.Material3.Button.OutlinedButton"/>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+</androidx.core.widget.NestedScrollView>
